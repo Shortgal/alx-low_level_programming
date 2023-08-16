@@ -8,8 +8,8 @@
 int main(void)
 
 {
-	int i + 0;
-	long j = 1, m = 2;
+	int i = 0;
+	j = 1, m = 2;
 
 	while (i < 50)
 	{
