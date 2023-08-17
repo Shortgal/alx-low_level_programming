@@ -32,7 +32,7 @@ void print_times_table(int n)
 	_putchar((taxi / 100 + '0'));
 	_putchar(((taxi / 10)) % 10 + '0');
 	}
-	else if (taxi <= 99 &&  >= 10)
+	else if (taxi <= 99 && taxi >= 10)
 	{
 	_putchar((taxi / 10) + '0');
 	}
