@@ -29,12 +29,13 @@ void print_times_table(int n)
 	_putchar(' ');
 	if (taxi >= 100)
 	{
-	_putchar((taxi / 100 + '0');
+	_putchar((taxi / 100 + '0'));
 	_putchar(((taxi / 10)) % 10 + '0');
 	}
 	else if (taxi <= 99 &&  >= 10)
 	{
 	_putchar((taxi / 10) + '0');
+	}
 	_putchar((taxi % 10) + '0');
 	}
 	_putchar('\n');
