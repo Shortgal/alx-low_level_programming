@@ -39,7 +39,7 @@ int _atoi(char *s)
 		}
 		a++;
 	}
-	
+
 	if (e == 0)
 
 		return (0);
@@ -55,17 +55,17 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int sum, sum1, sum2;
+	int result, num1, num2;
 
 	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	sum1 = _atoi(argv[1]);
-	sum2 = _atoi(argv[2]);
-	sum = sum1 * sum2;
-	printf("%d\n", sum);
+	num1 = _atoi(argv[1]);
+	num2 = _atoi(argv[2]);
+	result = num1 * num2;
+	printf("%d\n", result);
 
 	return (0);
 }
