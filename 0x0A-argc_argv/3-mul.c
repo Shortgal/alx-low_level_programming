@@ -19,20 +19,22 @@ int _atoi(char *s)
 	f = 0;
 
 	while (s[d] != '\0')
-		a++;
+		d++;
+
 	while (a < d && e == 0)
 	{
 		if (s[a] == 0)
 			++b;
+
 		if (s[a] == '-')
 			++b;
 		if (s[a] >= '0' && s[a] <= '9')
 		{
 			f = s[a] - '0';
-			if (d % 2)
+			if (b % 2)
 				f = -f;
 			n = n * 10 + f;
-			n = 1;
+			e = 1;
 			if (s[a + 1] < '0' || s[a + 1] > '9')
 				break;
 			e = 0;
