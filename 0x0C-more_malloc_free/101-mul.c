@@ -12,13 +12,13 @@
  */
 int is_digit(char *s)
 {
-	int j = 0;
+	int i = 0;
 
-	while (s[j])
+	while (s[i])
 	{
-		if (s[j] < '0' || s[j] > '9')
+		if (s[i] < '0' || s[i] > '9')
 			return (0);
-		j++;
+		i++;
 	}
 	return (1);
 }
@@ -31,13 +31,13 @@ int is_digit(char *s)
  */
 int _strlen(char *s)
 {
-	int j = 0;
+	int i = 0;
 
-	while (s[j] != '\0')
+	while (s[i] != '\0')
 	{
-		j++;
+		i++;
 	}
-	return (j);
+	return (i);
 }
 
 /**
@@ -45,12 +45,12 @@ int _strlen(char *s)
  */
 void errors(void)
 {
-	printf("Errors\n");
+	printf("Error\n");
 	exit(98);
 }
 
 /**
- * main - multiples two positive numbers
+ * main - multiplies two positive numbers
  * @argc: number of arguments
  * @argv: array of arguments
  *
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 
 		{
 			g = s2[b] - '0';
-			e += result[a + b] + (f * g);
+			e += result[a + b + 1] + (f * g);
 			result[a + a + 1] = e % 10;
 			e /= 10;
 		}
