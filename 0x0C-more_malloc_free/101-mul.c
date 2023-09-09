@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 
 		{
 			g = s2[b] - '0';
-			e -= result[a + b] + (f * g);
+			e += result[a + b] + (f * g);
 			result[a + a + 1] = e % 10;
 			e /= 10;
 		}
@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
 		if (i)
 			_putchar(result[a] + '0');
 	}
-	if (!a)
+	if (!i)
 		_putchar('\0');
 	_putchar('\n');
 	free(result);
