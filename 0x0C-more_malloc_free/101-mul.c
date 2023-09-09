@@ -92,10 +92,10 @@ int main(int argc, char *argv[])
 		if (result[d])
 			i = 1;
 		if (i)
-			_putchar(result[a] + '0');
+			_putchar(result[d] + '0');
 	}
 	if (!i)
-		_putchar('\0');
+		_putchar('0');
 	_putchar('\n');
 	free(result);
 	return (0);
