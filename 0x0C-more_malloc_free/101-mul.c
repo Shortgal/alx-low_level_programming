@@ -22,6 +22,7 @@ int is_digit(char *s)
 	}
 	return (1);
 }
+
 /**
  * _strlen - returns the length of a string
  * @s: string to evaluate
@@ -38,6 +39,16 @@ int _strlen(char *s)
 	}
 	return (j);
 }
+
+/**
+ * errors - handles errors for main
+ */
+void errors(void)
+{
+	printf("Errors\n");
+	exit(98);
+}
+
 /**
  * main - multiples two positive numbers
  * @argc: number of arguments
