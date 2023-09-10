@@ -48,7 +48,6 @@ void errors(void)
 	printf("Error\n");
 	exit(98);
 }
-
 /**
  * main - multiplies two positive numbers
  * @argc: number of arguments
@@ -90,7 +89,7 @@ int main(int argc, char *argv[])
 	{
 		if (result[i])
 			a = 1;
-		if (i)
+		if (a)
 			_putchar(result[i] + '0');
 	}
 	if (!a)
