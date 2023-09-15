@@ -24,12 +24,12 @@ int op_add(int a, int b)
  *
  * Return: The difference of a and b.
  */
-int  opp_sub(int a, int b)
+int  op_sub(int a, int b)
 {
 	return (a - b);
 }
 /**
- * op_mul(int a, int b)
+ * op_mul - Returns the product of two numbers.
  * @a: The first number.
  * @b: The second number.
  *
